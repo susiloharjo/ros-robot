@@ -6,4 +6,6 @@
 src ros_rplidar https://github.com/robopeak/rplidar_ros
 source devel/setup.bash
 roscore
+roslaunch rplidar_ros rplidar.launch
 roslaunch rplidar_ros view_rplidar.launch
+roslaunch hector_slam_launch tutorial.launch
