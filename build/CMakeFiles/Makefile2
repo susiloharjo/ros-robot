@@ -57,6 +57,7 @@ all: gtest/all
 all: hector_slam/hector_geotiff_launch/all
 all: hector_slam/hector_slam/all
 all: hector_slam/hector_slam_launch/all
+all: simultaion/all
 all: hector_slam/hector_map_tools/all
 all: hector_slam/hector_nav_msgs/all
 all: hector_slam/hector_geotiff/all
@@ -77,6 +78,7 @@ preinstall: gtest/preinstall
 preinstall: hector_slam/hector_geotiff_launch/preinstall
 preinstall: hector_slam/hector_slam/preinstall
 preinstall: hector_slam/hector_slam_launch/preinstall
+preinstall: simultaion/preinstall
 preinstall: hector_slam/hector_map_tools/preinstall
 preinstall: hector_slam/hector_nav_msgs/preinstall
 preinstall: hector_slam/hector_geotiff/preinstall
@@ -102,6 +104,7 @@ clean: gtest/clean
 clean: hector_slam/hector_geotiff_launch/clean
 clean: hector_slam/hector_slam/clean
 clean: hector_slam/hector_slam_launch/clean
+clean: simultaion/clean
 clean: hector_slam/hector_map_tools/clean
 clean: hector_slam/hector_nav_msgs/clean
 clean: hector_slam/hector_geotiff/clean
@@ -537,6 +540,24 @@ rplidar_ros/clean: rplidar_ros/CMakeFiles/rplidarNodeClient.dir/clean
 rplidar_ros/clean: rplidar_ros/CMakeFiles/rplidarNode.dir/clean
 
 .PHONY : rplidar_ros/clean
+
+#=============================================================================
+# Directory level rules for directory simultaion
+
+# Recursive "all" directory target.
+simultaion/all:
+
+.PHONY : simultaion/all
+
+# Recursive "preinstall" directory target.
+simultaion/preinstall:
+
+.PHONY : simultaion/preinstall
+
+# Recursive "clean" directory target.
+simultaion/clean:
+
+.PHONY : simultaion/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
